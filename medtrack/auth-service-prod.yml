@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    url: jdbc:postgresql://auth-postgres:5432/mt_authdb
+    username: postgres
+    password: password
+  application:
+    name: auth-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka
